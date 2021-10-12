@@ -578,7 +578,7 @@ fun createMagiskModule(result: ((needsToReboot: Boolean) -> Unit)? = null) = Mai
     val needsToUpdate = withContext(Dispatchers.IO) {
         val doesExist = moduleExists
         val currentVersion = try {
-            BufferedReader(SuFileInputStream(SuFile("$MAGISK_MODULE_PATH/module.prop")).reader())
+            BufferedReader(SuFileInputStream.open(SuFile("$MAGISK_MODULE_PATH/module.prop")).reader())
                 .lines()
                 .filter { it.startsWith("versionCode") }
                 .findFirst()
