@@ -2,7 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategory
+    <tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew
         android:title="@string/qs_header"
         android:key="qs_header">
 
@@ -35,9 +35,9 @@
             app:maxValue="@integer/header_count_landscape_max"
             />
 
-    </tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategory>
+    </tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew>
 
-    <tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategory
+    <tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew
         android:title="@string/qs_row_col"
         android:key="qs_row_col">
 
@@ -88,7 +88,7 @@
             app:maxValue="@integer/qs_col_count_landscape_max"
             />
 
-    </tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategory>
+    </tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew>
 
     <PreferenceCategory
         android:title="@string/misc">
